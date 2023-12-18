@@ -18,7 +18,7 @@ export class ZonesService {
       if(document.head.children.item(i)?.tagName == "BASE") {
         const baseHref = document.head.children.item(i)?.getAttribute("href");
         if (baseHref != "/") {
-          this.BaseUrl = "";
+          this.BaseUrl = "api/";
         }
       }
     }
