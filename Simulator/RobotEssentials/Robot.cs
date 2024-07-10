@@ -533,7 +533,7 @@ namespace Simulator.RobotEssentials
             }
             else
             {
-                if (mps.Type == Mps.MpsType.CapStation && !target.Equals("output"))
+                if (mps.Type == Mps.MpsType.CapStation && !target.ToLower().Equals("output"))
                 {
                     MyLogger.Log("Prepare in case of a CapStation!");
                     if (Config.SendPrepare)

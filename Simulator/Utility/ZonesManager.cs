@@ -167,7 +167,7 @@ namespace Simulator.Utility
                     int offset = 0;
                     var orientation = value.Orientation;
                     var neighborhood = value.GetNeighborhood();
-                    if (MachineName.Contains("output") || machinepoint.Equals("output"))
+                    if (MachineName.ToLower().Contains("output") || machinepoint.ToLower().Equals("output"))
                     {
                         orientation += 180;
                         orientation %= 360;
